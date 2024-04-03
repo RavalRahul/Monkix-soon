@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(font/Kommissar-Regular-Trial.woff);
+}
+
+@font-face {
+  font-family: mySubFont;
+  src: url(font/GeneralSans-Regular.otf);
+}
+
+body {
+  background-color: #111111;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-img1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bg-img2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+
+.logo {
+  width: 18%;
+}
+
+.heading {
+  font-size: 10vw;
+  font-family: myFont;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 10vw;
+  letter-spacing: 4px;
+}
+
+.tagline {
+  font-size: 2.5vw;
+  padding-top: 10px;
+  font-family: mySubFont;
+  color: #73eaff;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 2.5vw;
+  font-family: mySubFont;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.contact {
+  font-size: 2vw;
+  display: flex;
+  font-family: mySubFont;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.contact a {
+  color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .bg-img1 {
+    right: -50%;
+  }
+
+  .bg-img2 {
+    left: 0%;
+  }
+
+  .logo {
+    width: 25%;
+  }
+
+  .heading {
+    font-size: 11vw;
+  }
+
+  .tagline,
+  .title {
+    font-size: 3vw;
+  }
+
+  .contact {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .bg-img1 {
+    right: -80%;
+  }
+
+  .bg-img2 {
+    left: 0%;
+  }
+
+  .logo {
+    width: 35%;
+    padding-bottom: 20px;
+  }
+
+  .heading {
+    font-size: 10vw;
+  }
+
+  .tagline {
+    font-size: 3vw;
+  }
+
+  .title {
+    font-size: 4vw;
+  }
+
+  .contact {
+    font-size: 2.5vw;
+    flex-direction: column;
+  }
+  .contact span {
+    display: none;
+  }
+  .contact a {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .bg-img1 {
+    right: -100%;
+  }
+
+  .bg-img2 {
+    left: 0%;
+  }
+
+  .logo {
+    width: 55%;
+    padding-bottom: 20px;
+  }
+
+  .heading {
+    font-size: 13vw;
+    line-height: 14vw;
+  }
+
+  .tagline {
+    font-size: 6vw;
+    padding-top: 20px;
+  }
+
+  .title {
+    font-size: 10vw;
+  }
+
+  .contact {
+    font-size: 6vw;
+    flex-direction: column;
+  }
+  .contact span {
+    display: none;
+  }
+  .contact a {
+    padding-top: 10px;
+  }
+}
